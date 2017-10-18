@@ -9,7 +9,7 @@
   right: 0;
 
   background-color: white;
-  /*border-bottom: 3px solid #9E423A;*/
+  border-bottom: 3px solid white;
 }
 
 #logo {
@@ -39,7 +39,7 @@
 }
 
 .navbar-link:hover {
-  background-color: #661a04;
+  background-color: black;
   color: white;
   cursor: pointer;
 }
