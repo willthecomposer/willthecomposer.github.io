@@ -21,8 +21,6 @@ time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	/*font-family: 'Montserrat', sans-serif;*/
-	font-family: 'Archivo Narrow', sans-serif;
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
@@ -32,7 +30,6 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
-	background-color: black;
 }
 ol, ul {
 	list-style: none;
@@ -50,35 +47,28 @@ table {
 	border-spacing: 0;
 }
 
-a {
-	color: black;
-	text-decoration: none;
+/*ADDED*/
+
+body {
+	background-color: #414244;
 }
 
-h1, h2, h3 {
-	color: white;
-}
-
-
-/*Added*/
-.header {
-	display: inline-block;
-	padding: 0 10px;
-	background-color: black;
-}
-
-.header-line {
-	border-bottom: 2px solid white;
-	margin: 0 auto;
-	width: 80%;
+.whole-thing {
 	position: relative;
-	top: -12px;
-	z-index: -10;
 }
 
-#footer {
-	margin-top: 120px;
-	height: 100px;
-	border-top: 2px solid black;
-	background-color: white;
+.section-header {
+	text-align: center;
+	color: white;
+	font-family: "Arial Black", Gadget, sans-serif;
+	font-size: 80px;
+	margin-bottom: 10px;
+	margin-top: 20px;
+}
+
+iframe {
+	background-image: url("../images/preloader.gif");
+	background-size: 50px 50px;
+	background-repeat: no-repeat;
+	background-position: center;
 }
