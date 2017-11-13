@@ -19,6 +19,18 @@ const videoLinks = {
     screenshot: "images/screenshots/episode2.png",
     videoLink: "https://player.vimeo.com/video/174053285"
   },
+  "drpepper": {
+    screenshot: "images/screenshots/drpepper.png",
+    videoLink: "https://player.vimeo.com/video/110213267"
+  },
+  "cutwater": {
+    screenshot: "images/screenshots/cutwater.png",
+    videoLink: "https://player.vimeo.com/video/148148000"
+  },
+  "mercedes": {
+    screenshot: "images/screenshots/mercedes.png",
+    videoLink: "https://player.vimeo.com/video/110212920"
+  }
 }
 
 export default videoLinks;

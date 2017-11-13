@@ -21430,13 +21430,16 @@ var Videos = function (_React$Component) {
           { className: 'screenshots-div' },
           _react2.default.createElement(_video_screenshot2.default, { keyword: 'nomads', title: 'NOMADS', description: 'Short Film' }),
           _react2.default.createElement(_video_screenshot2.default, { keyword: 'counsyl', title: 'COUNSYL', description: 'Advertisement' }),
-          _react2.default.createElement(_video_screenshot2.default, { keyword: 'episode1', title: 'EPISODE', description: 'App Store Video' })
+          _react2.default.createElement(_video_screenshot2.default, { keyword: 'episode1', title: 'EPISODE', description: 'App Store Video' }),
+          _react2.default.createElement(_video_screenshot2.default, { keyword: 'bofa', title: 'BofA', description: 'Advertisement' })
         ),
         _react2.default.createElement(
           'div',
           { className: 'screenshots-div' },
-          _react2.default.createElement(_video_screenshot2.default, { keyword: 'bofa', title: 'BofA', description: 'Advertisement' }),
-          _react2.default.createElement(_video_screenshot2.default, { keyword: 'episode2', title: 'EPISODE', description: 'Advertisement' })
+          _react2.default.createElement(_video_screenshot2.default, { keyword: 'mercedes', title: 'MERCEDES', description: 'Advertisement' }),
+          _react2.default.createElement(_video_screenshot2.default, { keyword: 'episode2', title: 'EPISODE', description: 'Advertisement' }),
+          _react2.default.createElement(_video_screenshot2.default, { keyword: 'cutwater', title: 'CUTWATER', description: 'Holiday Card' }),
+          _react2.default.createElement(_video_screenshot2.default, { keyword: 'drpepper', title: 'DR PEPPER', description: 'Advertisement' })
         )
       );
     }
@@ -21581,6 +21584,18 @@ var videoLinks = {
   "episode2": {
     screenshot: "images/screenshots/episode2.png",
     videoLink: "https://player.vimeo.com/video/174053285"
+  },
+  "drpepper": {
+    screenshot: "images/screenshots/drpepper.png",
+    videoLink: "https://player.vimeo.com/video/110213267"
+  },
+  "cutwater": {
+    screenshot: "images/screenshots/cutwater.png",
+    videoLink: "https://player.vimeo.com/video/148148000"
+  },
+  "mercedes": {
+    screenshot: "images/screenshots/mercedes.png",
+    videoLink: "https://player.vimeo.com/video/110212920"
   }
 };
 

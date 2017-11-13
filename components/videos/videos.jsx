@@ -18,10 +18,13 @@ class Videos extends React.Component {
           <VideoScreenshot keyword="nomads" title="NOMADS" description="Short Film"/>
           <VideoScreenshot keyword="counsyl" title="COUNSYL" description="Advertisement"/>
           <VideoScreenshot keyword="episode1" title="EPISODE" description="App Store Video"/>
+          <VideoScreenshot keyword="bofa" title="BofA" description="Advertisement"/>
         </div>
         <div className="screenshots-div">
-          <VideoScreenshot keyword="bofa" title="BofA" description="Advertisement"/>
+          <VideoScreenshot keyword="mercedes" title="MERCEDES" description="Advertisement"/>
           <VideoScreenshot keyword="episode2" title="EPISODE" description="Advertisement"/>
+          <VideoScreenshot keyword="cutwater" title="CUTWATER" description="Holiday Card"/>
+          <VideoScreenshot keyword="drpepper" title="DR PEPPER" description="Advertisement"/>
         </div>
       </div>
     )
