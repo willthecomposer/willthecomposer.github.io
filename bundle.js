@@ -21422,11 +21422,6 @@ var Videos = function (_React$Component) {
         ),
         _react2.default.createElement(
           'div',
-          { id: 'reel-div' },
-          _react2.default.createElement('iframe', { id: 'reel', src: 'https://player.vimeo.com/video/241072029', width: '800', height: '450', allowFullScreen: 'true' })
-        ),
-        _react2.default.createElement(
-          'div',
           { className: 'screenshots-div' },
           _react2.default.createElement(_video_screenshot2.default, { keyword: 'nomads', title: 'NOMADS', description: 'Short Film' }),
           _react2.default.createElement(_video_screenshot2.default, { keyword: 'counsyl', title: 'COUNSYL', description: 'Advertisement' }),
@@ -21449,6 +21444,10 @@ var Videos = function (_React$Component) {
 }(_react2.default.Component);
 
 exports.default = Videos;
+
+// <div id="reel-div">
+//   <iframe id="reel" src="https://player.vimeo.com/video/241072029" width="800" height="450" allowFullScreen="true"></iframe>
+// </div>
 
 // VIDEOS HAVE A 16:9 ASPECT RATIO
 

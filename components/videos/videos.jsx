@@ -11,9 +11,6 @@ class Videos extends React.Component {
     return(
       <div id="videos">
         <h1 className="section-header">VIDEO</h1>
-        <div id="reel-div">
-          <iframe id="reel" src="https://player.vimeo.com/video/241072029" width="800" height="450" allowFullScreen="true"></iframe>
-        </div>
         <div className="screenshots-div">
           <VideoScreenshot keyword="nomads" title="NOMADS" description="Short Film"/>
           <VideoScreenshot keyword="counsyl" title="COUNSYL" description="Advertisement"/>
@@ -32,6 +29,10 @@ class Videos extends React.Component {
 }
 
 export default Videos;
+
+// <div id="reel-div">
+//   <iframe id="reel" src="https://player.vimeo.com/video/241072029" width="800" height="450" allowFullScreen="true"></iframe>
+// </div>
 
 // VIDEOS HAVE A 16:9 ASPECT RATIO
 
