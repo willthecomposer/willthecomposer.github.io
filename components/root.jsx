@@ -1,43 +1,29 @@
 import React from 'react';
+import { HashRouter, Switch, Route, Navlink, Link } from 'react-router-dom';
 
 import Navbar from './navbar';
 import Videos from './videos/videos';
 import Audio from './audio/audio';
 import Contact from './contact';
+import About from './about';
 
-class Root extends React.Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {selected: "video"}
-
-    this.swapComponent = this.swapComponent.bind(this);
-  }
-
-  swapComponent(selected) {
-    this.setState({selected})
-  }
-
-  render() {
-    let page = null;
-    if (this.state.selected === "video") {
-      page = <Videos />;
-    } else if (this.state.selected === "audio") {
-      page = <Audio />;
-    } else if (this.state.selected === "contact") {
-      page = <Contact />;
-    } else {
-      page = <Videos />
-    }
-
-
-    return(
-      <div className="whole-thing">
-        <Navbar swapComponent={this.swapComponent} />
-        {page}
-      </div>
-    )
-  }
+const Root = () => {
+  return(
+    <div className="whole-thing">
+      <HashRouter>
+        <div>
+          <Route path="/" component={Navbar} />
+          <Switch>
+            <Route exact path="/" component={Videos} />
+            <Route exact path="/video" component={Videos} />
+            <Route exact path="/audio" component={Audio} />
+            <Route exact path="/about" component={About} />
+            <Route exact path="/contact" component={Contact} />
+          </Switch>
+        </div>
+      </HashRouter>
+    </div>
+  )
 }
 
 export default Root;
