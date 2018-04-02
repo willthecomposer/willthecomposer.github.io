@@ -28,8 +28,10 @@ class VideoScreenshot extends React.Component {
         <div onClick={this.openModal} className="video-screenshot-div">
           <img className="video-screenshot" src={video.screenshot}></img>
           <div className="video-screenshot-info">
-            <h1 className="video-screenshot-title">{this.props.title}</h1>
-            <h2 className="video-screenshot-description">{this.props.description}</h2>
+            <div className="video-screenshot-text">
+              <h1 className="video-screenshot-title">{this.props.title}</h1>
+              <h2 className="video-screenshot-description">{this.props.description}</h2>
+            </div>
           </div>
         </div>
         {this.state.showModal ? <VideoModal closeModal={this.closeModal} keyword={`${this.props.keyword}-modal`} url={video.videoLink}/> : null}

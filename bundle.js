@@ -20303,11 +20303,7 @@ var _audio = __webpack_require__(82);
 
 var _audio2 = _interopRequireDefault(_audio);
 
-var _contact = __webpack_require__(83);
-
-var _contact2 = _interopRequireDefault(_contact);
-
-var _about = __webpack_require__(84);
+var _about = __webpack_require__(87);
 
 var _about2 = _interopRequireDefault(_about);
 
@@ -20328,10 +20324,9 @@ var Root = function Root() {
           _reactRouterDom.Switch,
           null,
           _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/', component: _videos2.default }),
-          _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/video', component: _videos2.default }),
-          _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/audio', component: _audio2.default }),
-          _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/about', component: _about2.default }),
-          _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/contact', component: _contact2.default })
+          _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/professional', component: _videos2.default }),
+          _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/personal', component: _audio2.default }),
+          _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/info', component: _about2.default })
         )
       )
     )
@@ -23458,38 +23453,29 @@ var Navbar = function (_React$Component) {
             { id: 'navbar-links' },
             _react2.default.createElement(
               _reactRouterDom.NavLink,
-              { activeClassName: 'selected', className: 'navbar-link', to: '/audio' },
+              { activeClassName: 'selected', className: 'navbar-link', to: '/personal' },
               _react2.default.createElement(
                 'p',
                 { id: 'link-audio' },
-                'Audio'
+                'Personal'
               )
             ),
             _react2.default.createElement(
               _reactRouterDom.NavLink,
-              { activeClassName: 'selected', className: 'navbar-link', to: '/video' },
+              { activeClassName: 'selected', className: 'navbar-link', to: '/professional' },
               _react2.default.createElement(
                 'p',
                 { id: 'link-video' },
-                'Video'
+                'Professional'
               )
             ),
             _react2.default.createElement(
               _reactRouterDom.NavLink,
-              { activeClassName: 'selected', className: 'navbar-link', to: '/about' },
+              { activeClassName: 'selected', className: 'navbar-link', to: '/info' },
               _react2.default.createElement(
                 'p',
                 { id: 'link-video' },
-                'About'
-              )
-            ),
-            _react2.default.createElement(
-              _reactRouterDom.NavLink,
-              { activeClassName: 'selected', className: 'navbar-link', to: '/contact' },
-              _react2.default.createElement(
-                'p',
-                { id: 'link-contact' },
-                'Contact'
+                'Info'
               )
             )
           )
@@ -23589,12 +23575,7 @@ var Videos = function (_React$Component) {
     value: function render() {
       return _react2.default.createElement(
         'div',
-        { id: 'videos' },
-        _react2.default.createElement(
-          'h1',
-          { className: 'section-header' },
-          'VIDEO'
-        ),
+        { className: 'videos' },
         _react2.default.createElement(
           'div',
           { className: 'screenshots-div' },
@@ -23705,14 +23686,18 @@ var VideoScreenshot = function (_React$Component) {
             'div',
             { className: 'video-screenshot-info' },
             _react2.default.createElement(
-              'h1',
-              { className: 'video-screenshot-title' },
-              this.props.title
-            ),
-            _react2.default.createElement(
-              'h2',
-              { className: 'video-screenshot-description' },
-              this.props.description
+              'div',
+              { className: 'video-screenshot-text' },
+              _react2.default.createElement(
+                'h1',
+                { className: 'video-screenshot-title' },
+                this.props.title
+              ),
+              _react2.default.createElement(
+                'h2',
+                { className: 'video-screenshot-description' },
+                this.props.description
+              )
             )
           )
         ),
@@ -23871,12 +23856,7 @@ var Audio = function (_React$Component) {
     value: function render() {
       return _react2.default.createElement(
         "div",
-        { id: "audio" },
-        _react2.default.createElement(
-          "h1",
-          { className: "section-header" },
-          "AUDIO"
-        ),
+        { className: "audio" },
         _react2.default.createElement(
           "div",
           { className: "soundcloud-div" },
@@ -23899,7 +23879,10 @@ var Audio = function (_React$Component) {
 exports.default = Audio;
 
 /***/ }),
-/* 83 */
+/* 83 */,
+/* 84 */,
+/* 85 */,
+/* 86 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23937,87 +23920,46 @@ var Contact = function (_React$Component) {
     value: function render() {
       return _react2.default.createElement(
         "div",
-        { id: "contact" },
+        { className: "contact" },
         _react2.default.createElement(
-          "h1",
-          { className: "section-header" },
-          "CONTACT"
+          "div",
+          { className: "contact-grouping" },
+          _react2.default.createElement(
+            "div",
+            { className: "contact-item" },
+            _react2.default.createElement(
+              "a",
+              { href: "mailto:will.p.johnson@gmail.com" },
+              _react2.default.createElement("i", { className: "clickable fa fa-envelope", "aria-hidden": "true" })
+            ),
+            _react2.default.createElement(
+              "h2",
+              { className: "contact-text" },
+              "will.p.johnson@gmail.com"
+            )
+          )
         ),
         _react2.default.createElement(
           "div",
-          { id: "contact-info" },
+          { className: "contact-grouping" },
           _react2.default.createElement(
             "div",
-            { className: "contact-grouping" },
+            { className: "contact-item" },
+            _react2.default.createElement("i", { className: "fa fa-phone", "aria-hidden": "true" }),
             _react2.default.createElement(
-              "div",
-              { className: "contact-item" },
-              _react2.default.createElement(
-                "a",
-                { href: "mailto:will.p.johnson@gmail.com" },
-                _react2.default.createElement("i", { className: "clickable fa fa-envelope", "aria-hidden": "true" })
-              ),
-              _react2.default.createElement(
-                "h2",
-                { className: "contact-text" },
-                "will.p.johnson@gmail.com"
-              )
+              "h2",
+              { className: "contact-text" },
+              "973-943-9032"
             )
           ),
           _react2.default.createElement(
             "div",
-            { className: "contact-grouping" },
+            { className: "contact-item" },
+            _react2.default.createElement("i", { className: "fa fa-map-marker", "aria-hidden": "true" }),
             _react2.default.createElement(
-              "div",
-              { className: "contact-item" },
-              _react2.default.createElement("i", { className: "fa fa-phone", "aria-hidden": "true" }),
-              _react2.default.createElement(
-                "h2",
-                { className: "contact-text" },
-                "973-943-9032"
-              )
-            ),
-            _react2.default.createElement(
-              "div",
-              { className: "contact-item" },
-              _react2.default.createElement("i", { className: "fa fa-map-marker", "aria-hidden": "true" }),
-              _react2.default.createElement(
-                "h2",
-                { className: "contact-text" },
-                "Brooklyn, NY"
-              )
-            )
-          ),
-          _react2.default.createElement(
-            "div",
-            { className: "contact-grouping" },
-            _react2.default.createElement(
-              "div",
-              { className: "contact-item" },
-              _react2.default.createElement(
-                "a",
-                { href: "http://www.twitter.com/willpjohnson", target: "_blank" },
-                _react2.default.createElement("i", { className: "clickable fa fa-twitter", "aria-hidden": "true" })
-              ),
-              _react2.default.createElement(
-                "h2",
-                { className: "contact-text" },
-                "@willpjohnson"
-              )
-            ),
-            _react2.default.createElement(
-              "div",
-              { className: "contact-item" },
-              _react2.default.createElement(
-                "a",
-                { href: "http://www.instagram.com/willpjohnson", target: "_blank" },
-                _react2.default.createElement("i", { className: "clickable fa fa-instagram", "aria-hidden": "true" })
-              ),
-              _react2.default.createElement(
-                "h2",
-                { className: "contact-text" },
-                "willpjohnson"
-              )
+              "h2",
+              { className: "contact-text" },
+              "Brooklyn, NY"
             )
           )
         )
@@ -24031,7 +23973,7 @@ var Contact = function (_React$Component) {
 exports.default = Contact;
 
 /***/ }),
-/* 84 */
+/* 87 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24047,9 +23989,17 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _about_photo = __webpack_require__(85);
+var _about_photo = __webpack_require__(88);
 
 var _about_photo2 = _interopRequireDefault(_about_photo);
+
+var _about_copy = __webpack_require__(89);
+
+var _about_copy2 = _interopRequireDefault(_about_copy);
+
+var _contact = __webpack_require__(86);
+
+var _contact2 = _interopRequireDefault(_contact);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -24075,46 +24025,14 @@ var About = function (_React$Component) {
         'div',
         { className: 'about' },
         _react2.default.createElement(
-          'h1',
-          { className: 'section-header' },
-          'ABOUT'
-        ),
-        _react2.default.createElement(
           'div',
-          { className: 'about-info' },
+          { className: 'about-div' },
           _react2.default.createElement(_about_photo2.default, null),
           _react2.default.createElement(
             'div',
-            { className: 'about-text-container' },
-            _react2.default.createElement(
-              'p',
-              { className: 'about-text' },
-              'My name is Will and I am a New York City based composer and producer. I have written music for advertisements, video games, short films, and theater pieces. I\'ve worked with music houses ',
-              _react2.default.createElement(
-                'a',
-                { href: 'http://www.gimmebutter.com', target: '_blank' },
-                'Butter'
-              ),
-              ', ',
-              _react2.default.createElement(
-                'a',
-                { href: 'http://www.jinglepunks.com', target: '_blank' },
-                'Jingle Punks'
-              ),
-              ', and ',
-              _react2.default.createElement(
-                'a',
-                { href: 'http://www.mophonics.com', target: '_blank' },
-                'Mophonics'
-              ),
-              '. I make ',
-              _react2.default.createElement(
-                'a',
-                { href: 'http://www.soundcloud.com/willpjohnson', target: '_blank' },
-                'beats'
-              ),
-              ' as a solo producer and have composed all manner of genres for all manner of clients.'
-            )
+            { className: 'about-info' },
+            _react2.default.createElement(_about_copy2.default, null),
+            _react2.default.createElement(_contact2.default, null)
           )
         )
       );
@@ -24127,7 +24045,7 @@ var About = function (_React$Component) {
 exports.default = About;
 
 /***/ }),
-/* 85 */
+/* 88 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24163,8 +24081,6 @@ var AboutPhoto = function (_React$Component) {
       opacities: ["about-photo opaque", "about-photo clear"]
     };
 
-    _this.cycleRight = _this.cycleRight.bind(_this);
-    _this.cycleLeft = _this.cycleLeft.bind(_this);
     _this.autoCycleRight = _this.autoCycleRight.bind(_this);
     return _this;
   }
@@ -24187,24 +24103,6 @@ var AboutPhoto = function (_React$Component) {
       this.setState({ opacities: opacities });
     }
   }, {
-    key: "cycleRight",
-    value: function cycleRight() {
-      var opacities = this.state.opacities;
-      var last = opacities.pop();
-      opacities.unshift(last);
-      this.setState({ opacities: opacities });
-      clearInterval(this.cycle);
-    }
-  }, {
-    key: "cycleLeft",
-    value: function cycleLeft() {
-      var opacities = this.state.opacities;
-      var first = opacities.shift();
-      opacities.push(first);
-      this.setState({ opacities: opacities });
-      clearInterval(this.cycle);
-    }
-  }, {
     key: "render",
     value: function render() {
       return _react2.default.createElement(
@@ -24221,8 +24119,60 @@ var AboutPhoto = function (_React$Component) {
 
 exports.default = AboutPhoto;
 
-// <div onClick={this.cycleRight} className="arrow arrow-right"><img className="arrow-img" src="images/arrow-right.png"></img></div>
-// <div onClick={this.cycleLeft} className="arrow arrow-left"><img className="arrow-img" src="images/arrow-left.png"></img></div>
+/***/ }),
+/* 89 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var AboutCopy = function AboutCopy() {
+  return _react2.default.createElement(
+    "div",
+    { className: "about-copy" },
+    _react2.default.createElement(
+      "p",
+      { className: "about-text" },
+      "My name is Will and I am a New York City based composer and ",
+      _react2.default.createElement(
+        "a",
+        { href: "http://www.soundcloud.com/willpjohnson", target: "_blank" },
+        "producer"
+      ),
+      ". I have written music for ads, video games, short films, and theater pieces. I've worked with music houses ",
+      _react2.default.createElement(
+        "a",
+        { href: "http://www.gimmebutter.com", target: "_blank" },
+        "Butter"
+      ),
+      ", ",
+      _react2.default.createElement(
+        "a",
+        { href: "http://www.jinglepunks.com", target: "_blank" },
+        "Jingle Punks"
+      ),
+      ", and ",
+      _react2.default.createElement(
+        "a",
+        { href: "http://www.mophonics.com", target: "_blank" },
+        "Mophonics"
+      ),
+      "."
+    )
+  );
+};
+
+exports.default = AboutCopy;
 
 /***/ })
 /******/ ]);

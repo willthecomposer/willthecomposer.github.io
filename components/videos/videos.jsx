@@ -9,8 +9,7 @@ class Videos extends React.Component {
 
   render() {
     return(
-      <div id="videos">
-        <h1 className="section-header">VIDEO</h1>
+      <div className="videos">
         <div className="screenshots-div">
           <VideoScreenshot keyword="nomads" title="NOMADS" description="Short Film"/>
           <VideoScreenshot keyword="counsyl" title="COUNSYL" description="Advertisement"/>

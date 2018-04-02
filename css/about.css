@@ -1,8 +1,16 @@
-.about-info {
+.about {
+  margin-top: 80px;
+}
+
+.about-div {
   width: 80%;
   margin: 20px auto;
   display: flex;
   justify-content: space-around;
+}
+
+.about-info {
+  width: 50%;
 }
 
 /* PHOTO */
@@ -20,44 +28,6 @@
 }
 .opaque { opacity: 1; }
 .clear { opacity: 0; }
-
-.arrow {
-  position: absolute;
-  height: 4%;
-  top: 50%;
-
-  opacity: 0;
-  background-color: black;
-  cursor: pointer;
-  z-index: 10;
-}
-
-.about-photo-container:hover .arrow {
-  opacity: 0.3;
-  transition: opacity 0.5s linear;
-}
-
-.arrow-right {
-  right: 0;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  padding-left: 10px;
-  padding-right: 4px;
-}
-
-.arrow-left {
-  left: 0;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  padding-right: 10px;
-  padding-left: 4px;
-}
-
-.arrow-img {
-  height: 100%;
-  position: absolute;
-  top: 0;
-}
 
 /* TEXT */
 
@@ -82,4 +52,39 @@
 
 .about-text a:hover {
   color: #eaeaea;
+}
+
+/* CONTACT */
+
+.contact {
+  margin-top: 50px;
+}
+
+.contact-grouping {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.contact-item {
+  display: table;
+  margin: 10px;
+  margin-left: 0;
+}
+
+.contact-text {
+  display: table-cell;
+  vertical-align: middle;
+  padding-left: 5px;
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+  font-size: 20px;
+}
+
+i {
+  color: white;
+  font-size: 50px !important;
+}
+
+.clickable:hover {
+  color: gray;
 }

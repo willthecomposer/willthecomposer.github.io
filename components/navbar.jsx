@@ -15,10 +15,9 @@ class Navbar extends React.Component {
         <div id="navbar">
           <img id="logo" src="images/logo-bw.jpg" alt="" />
           <div id="navbar-links">
-            <NavLink activeClassName="selected" className="navbar-link" to="/audio"><p id="link-audio">Audio</p></NavLink>
-            <NavLink activeClassName="selected" className="navbar-link" to="/video"><p id="link-video">Video</p></NavLink>
-            <NavLink activeClassName="selected" className="navbar-link" to="/about"><p id="link-video">About</p></NavLink>
-            <NavLink activeClassName="selected" className="navbar-link" to="/contact"><p id="link-contact">Contact</p></NavLink>
+            <NavLink activeClassName="selected" className="navbar-link" to="/personal"><p id="link-audio">Personal</p></NavLink>
+            <NavLink activeClassName="selected" className="navbar-link" to="/professional"><p id="link-video">Professional</p></NavLink>
+            <NavLink activeClassName="selected" className="navbar-link" to="/info"><p id="link-video">Info</p></NavLink>
           </div>
         </div>
       </div>
