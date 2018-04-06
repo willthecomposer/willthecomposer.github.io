@@ -20303,7 +20303,7 @@ var _audio = __webpack_require__(82);
 
 var _audio2 = _interopRequireDefault(_audio);
 
-var _about = __webpack_require__(87);
+var _about = __webpack_require__(83);
 
 var _about2 = _interopRequireDefault(_about);
 
@@ -23579,8 +23579,8 @@ var Videos = function (_React$Component) {
         _react2.default.createElement(
           'div',
           { className: 'screenshots-div' },
-          _react2.default.createElement(_video_screenshot2.default, { keyword: 'nomads', title: 'NOMADS', description: 'Short Film' }),
           _react2.default.createElement(_video_screenshot2.default, { keyword: 'counsyl', title: 'COUNSYL', description: 'Advertisement' }),
+          _react2.default.createElement(_video_screenshot2.default, { keyword: 'nomads', title: 'NOMADS', description: 'Short Film' }),
           _react2.default.createElement(_video_screenshot2.default, { keyword: 'episode1', title: 'EPISODE', description: 'App Store Video' }),
           _react2.default.createElement(_video_screenshot2.default, { keyword: 'bofa', title: 'BofA', description: 'Advertisement' })
         ),
@@ -23600,18 +23600,6 @@ var Videos = function (_React$Component) {
 }(_react2.default.Component);
 
 exports.default = Videos;
-
-// <div id="reel-div">
-//   <iframe id="reel" src="https://player.vimeo.com/video/241072029" width="800" height="450" allowFullScreen="true"></iframe>
-// </div>
-
-// VIDEOS HAVE A 16:9 ASPECT RATIO
-
-// <iframe className="video" src="https://player.vimeo.com/video/219755414" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-// <iframe className="video" src="https://player.vimeo.com/video/197982990" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-// <iframe className="video" src="https://player.vimeo.com/video/165378387" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-// <iframe className="video" src="https://player.vimeo.com/video/174053285" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-// <iframe className="video" src="https://player.vimeo.com/video/148430902" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 /***/ }),
 /* 79 */
@@ -23879,9 +23867,208 @@ var Audio = function (_React$Component) {
 exports.default = Audio;
 
 /***/ }),
-/* 83 */,
-/* 84 */,
-/* 85 */,
+/* 83 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _about_photo = __webpack_require__(84);
+
+var _about_photo2 = _interopRequireDefault(_about_photo);
+
+var _about_copy = __webpack_require__(85);
+
+var _about_copy2 = _interopRequireDefault(_about_copy);
+
+var _contact = __webpack_require__(86);
+
+var _contact2 = _interopRequireDefault(_contact);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var About = function (_React$Component) {
+  _inherits(About, _React$Component);
+
+  function About(props) {
+    _classCallCheck(this, About);
+
+    return _possibleConstructorReturn(this, (About.__proto__ || Object.getPrototypeOf(About)).call(this, props));
+  }
+
+  _createClass(About, [{
+    key: 'render',
+    value: function render() {
+      return _react2.default.createElement(
+        'div',
+        { className: 'about' },
+        _react2.default.createElement(
+          'div',
+          { className: 'about-div' },
+          _react2.default.createElement(_about_photo2.default, null),
+          _react2.default.createElement(
+            'div',
+            { className: 'about-info' },
+            _react2.default.createElement(_about_copy2.default, null),
+            _react2.default.createElement(_contact2.default, null)
+          )
+        )
+      );
+    }
+  }]);
+
+  return About;
+}(_react2.default.Component);
+
+exports.default = About;
+
+/***/ }),
+/* 84 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var AboutPhoto = function (_React$Component) {
+  _inherits(AboutPhoto, _React$Component);
+
+  function AboutPhoto(props) {
+    _classCallCheck(this, AboutPhoto);
+
+    var _this = _possibleConstructorReturn(this, (AboutPhoto.__proto__ || Object.getPrototypeOf(AboutPhoto)).call(this, props));
+
+    _this.state = {
+      opacities: ["about-photo opaque", "about-photo clear"]
+    };
+
+    _this.autoCycleRight = _this.autoCycleRight.bind(_this);
+    return _this;
+  }
+
+  _createClass(AboutPhoto, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      var _this2 = this;
+
+      this.cycle = setInterval(function () {
+        _this2.autoCycleRight();
+      }, 3000);
+    }
+  }, {
+    key: "autoCycleRight",
+    value: function autoCycleRight() {
+      var opacities = this.state.opacities;
+      var last = opacities.pop();
+      opacities.unshift(last);
+      this.setState({ opacities: opacities });
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      return _react2.default.createElement(
+        "div",
+        { className: "about-photo-container" },
+        _react2.default.createElement("img", { className: this.state.opacities[0], src: "images/young-will.jpg" }),
+        _react2.default.createElement("img", { className: this.state.opacities[1], src: "images/will.jpg" })
+      );
+    }
+  }]);
+
+  return AboutPhoto;
+}(_react2.default.Component);
+
+exports.default = AboutPhoto;
+
+/***/ }),
+/* 85 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var AboutCopy = function AboutCopy() {
+  return _react2.default.createElement(
+    "div",
+    { className: "about-copy" },
+    _react2.default.createElement(
+      "p",
+      { className: "about-text" },
+      "My name is Will and I am a New York City based composer and ",
+      _react2.default.createElement(
+        "a",
+        { href: "http://www.soundcloud.com/willpjohnson", target: "_blank" },
+        "producer"
+      ),
+      ". I have written music for ads, video games, short films, and theater pieces. I've worked with music houses ",
+      _react2.default.createElement(
+        "a",
+        { href: "http://www.gimmebutter.com", target: "_blank" },
+        "Butter"
+      ),
+      ", ",
+      _react2.default.createElement(
+        "a",
+        { href: "http://www.jinglepunks.com", target: "_blank" },
+        "Jingle Punks"
+      ),
+      ", and ",
+      _react2.default.createElement(
+        "a",
+        { href: "http://www.mophonics.com", target: "_blank" },
+        "Mophonics"
+      ),
+      "."
+    )
+  );
+};
+
+exports.default = AboutCopy;
+
+/***/ }),
 /* 86 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -23971,208 +24158,6 @@ var Contact = function (_React$Component) {
 }(_react2.default.Component);
 
 exports.default = Contact;
-
-/***/ }),
-/* 87 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(0);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _about_photo = __webpack_require__(88);
-
-var _about_photo2 = _interopRequireDefault(_about_photo);
-
-var _about_copy = __webpack_require__(89);
-
-var _about_copy2 = _interopRequireDefault(_about_copy);
-
-var _contact = __webpack_require__(86);
-
-var _contact2 = _interopRequireDefault(_contact);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var About = function (_React$Component) {
-  _inherits(About, _React$Component);
-
-  function About(props) {
-    _classCallCheck(this, About);
-
-    return _possibleConstructorReturn(this, (About.__proto__ || Object.getPrototypeOf(About)).call(this, props));
-  }
-
-  _createClass(About, [{
-    key: 'render',
-    value: function render() {
-      return _react2.default.createElement(
-        'div',
-        { className: 'about' },
-        _react2.default.createElement(
-          'div',
-          { className: 'about-div' },
-          _react2.default.createElement(_about_photo2.default, null),
-          _react2.default.createElement(
-            'div',
-            { className: 'about-info' },
-            _react2.default.createElement(_about_copy2.default, null),
-            _react2.default.createElement(_contact2.default, null)
-          )
-        )
-      );
-    }
-  }]);
-
-  return About;
-}(_react2.default.Component);
-
-exports.default = About;
-
-/***/ }),
-/* 88 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(0);
-
-var _react2 = _interopRequireDefault(_react);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var AboutPhoto = function (_React$Component) {
-  _inherits(AboutPhoto, _React$Component);
-
-  function AboutPhoto(props) {
-    _classCallCheck(this, AboutPhoto);
-
-    var _this = _possibleConstructorReturn(this, (AboutPhoto.__proto__ || Object.getPrototypeOf(AboutPhoto)).call(this, props));
-
-    _this.state = {
-      opacities: ["about-photo opaque", "about-photo clear"]
-    };
-
-    _this.autoCycleRight = _this.autoCycleRight.bind(_this);
-    return _this;
-  }
-
-  _createClass(AboutPhoto, [{
-    key: "componentDidMount",
-    value: function componentDidMount() {
-      var _this2 = this;
-
-      this.cycle = setInterval(function () {
-        _this2.autoCycleRight();
-      }, 3000);
-    }
-  }, {
-    key: "autoCycleRight",
-    value: function autoCycleRight() {
-      var opacities = this.state.opacities;
-      var last = opacities.pop();
-      opacities.unshift(last);
-      this.setState({ opacities: opacities });
-    }
-  }, {
-    key: "render",
-    value: function render() {
-      return _react2.default.createElement(
-        "div",
-        { className: "about-photo-container" },
-        _react2.default.createElement("img", { className: this.state.opacities[0], src: "images/young-will.jpg" }),
-        _react2.default.createElement("img", { className: this.state.opacities[1], src: "images/will.jpg" })
-      );
-    }
-  }]);
-
-  return AboutPhoto;
-}(_react2.default.Component);
-
-exports.default = AboutPhoto;
-
-/***/ }),
-/* 89 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _react = __webpack_require__(0);
-
-var _react2 = _interopRequireDefault(_react);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var AboutCopy = function AboutCopy() {
-  return _react2.default.createElement(
-    "div",
-    { className: "about-copy" },
-    _react2.default.createElement(
-      "p",
-      { className: "about-text" },
-      "My name is Will and I am a New York City based composer and ",
-      _react2.default.createElement(
-        "a",
-        { href: "http://www.soundcloud.com/willpjohnson", target: "_blank" },
-        "producer"
-      ),
-      ". I have written music for ads, video games, short films, and theater pieces. I've worked with music houses ",
-      _react2.default.createElement(
-        "a",
-        { href: "http://www.gimmebutter.com", target: "_blank" },
-        "Butter"
-      ),
-      ", ",
-      _react2.default.createElement(
-        "a",
-        { href: "http://www.jinglepunks.com", target: "_blank" },
-        "Jingle Punks"
-      ),
-      ", and ",
-      _react2.default.createElement(
-        "a",
-        { href: "http://www.mophonics.com", target: "_blank" },
-        "Mophonics"
-      ),
-      "."
-    )
-  );
-};
-
-exports.default = AboutCopy;
 
 /***/ })
 /******/ ]);
