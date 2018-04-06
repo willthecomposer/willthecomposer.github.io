@@ -11,8 +11,8 @@ class Videos extends React.Component {
     return(
       <div className="videos">
         <div className="screenshots-div">
-          <VideoScreenshot keyword="nomads" title="NOMADS" description="Short Film"/>
           <VideoScreenshot keyword="counsyl" title="COUNSYL" description="Advertisement"/>
+          <VideoScreenshot keyword="nomads" title="NOMADS" description="Short Film"/>
           <VideoScreenshot keyword="episode1" title="EPISODE" description="App Store Video"/>
           <VideoScreenshot keyword="bofa" title="BofA" description="Advertisement"/>
         </div>
