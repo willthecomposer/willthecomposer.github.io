@@ -20323,7 +20323,9 @@ var Root = function Root() {
         _react2.default.createElement(
           _reactRouterDom.Switch,
           null,
-          _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/', component: _videos2.default }),
+          _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/', render: function render() {
+              return _react2.default.createElement(_reactRouterDom.Redirect, { to: '/professional' });
+            } }),
           _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/professional', component: _videos2.default }),
           _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/personal', component: _audio2.default }),
           _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/info', component: _about2.default })
