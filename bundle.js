@@ -23849,13 +23849,22 @@ var Audio = function (_React$Component) {
           "div",
           { className: "soundcloud-div" },
           _react2.default.createElement("iframe", { className: "soundcloud", scrolling: "no", frameBorder: "no", src: "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/45387503&color=%23c2c1b9&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true" }),
-          _react2.default.createElement("iframe", { className: "soundcloud", scrolling: "no", frameBorder: "no", src: "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/186566215&color=%23c2c1b9&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true" })
+          _react2.default.createElement("iframe", { className: "soundcloud", scrolling: "no", frameBorder: "no", src: "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/186566215&color=%23c2c1b9&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true" }),
+          _react2.default.createElement("iframe", { className: "soundcloud", scrolling: "no", frameBorder: "no", src: "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/530007030&color=%23c2c1b9&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true" })
         ),
         _react2.default.createElement(
           "div",
           { className: "soundcloud-div" },
           _react2.default.createElement("iframe", { className: "soundcloud", scrolling: "no", frameBorder: "no", src: "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/160420227&color=%23c2c1b9&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true" }),
-          _react2.default.createElement("iframe", { className: "soundcloud", scrolling: "no", frameBorder: "no", src: "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/100906166&color=%23c2c1b9&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true" })
+          _react2.default.createElement("iframe", { className: "soundcloud", scrolling: "no", frameBorder: "no", src: "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/100906166&color=%23c2c1b9&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true" }),
+          _react2.default.createElement("iframe", { className: "soundcloud", scrolling: "no", frameBorder: "no", src: "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/204524651&color=%23c2c1b9&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true" })
+        ),
+        _react2.default.createElement(
+          "div",
+          { className: "soundcloud-div" },
+          _react2.default.createElement("iframe", { className: "soundcloud", scrolling: "no", frameBorder: "no", src: "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/236208643&color=%23c2c1b9&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true" }),
+          _react2.default.createElement("iframe", { className: "soundcloud", scrolling: "no", frameBorder: "no", src: "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/189812848&color=%23c2c1b9&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true" }),
+          _react2.default.createElement("iframe", { className: "soundcloud", scrolling: "no", frameBorder: "no", src: "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/187241893&color=%23c2c1b9&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true" })
         )
       );
     }
